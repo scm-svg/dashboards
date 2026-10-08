@@ -363,7 +363,7 @@ const GRID={color:'#e2e2e2'};
 // ===== HEADER + KPIs (hero) =====
 $('hdrR').innerHTML = `${fm(D.kpi.skus)} SKUs · ${D.kpi.modelos} modelos`;
 const F0=D.kpi.first||0, AVM=12-F0;   // meses con datos de la tienda
-window.setSub=()=>{$('hdrSub').textContent=`SOMOS CUADRO · ${D.kpi.meses12[F0].toUpperCase()} ${F0<3?'2025':'2026'}–SEP 2026 · ANÁLISIS DE ${D.kpi.win} MESES · CORTE 30/09/2026`;};
+window.setSub=()=>{$('hdrSub').textContent=`SOMOS CUADRO · ${D.kpi.meses12[F0].toUpperCase()} ${F0<3?'2025':'2026'}–SEP 2026 · ANÁLISIS DE ${D.kpi.win} MESES · VENTAS AL 30/09/2026 · STOCK AL 06/10/2026`;};
 (function(){const c=D.kpi.chat||{},p=[];
  p.push('Ventas netas de devoluciones');
  const inc=[]; if(c.chat>=1) inc.push(`Cuadro Chat (${Math.round(c.chat)} % de las unidades de los últimos ${c.win} meses)`); if(c.corp>=1) inc.push(`Corporativo (${Math.round(c.corp)} %)`);
